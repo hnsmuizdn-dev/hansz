@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>HANSZ — Software Engineer</title>
+<meta name="description" content="HANSZ — Software Engineer.">
+<meta name="author" content="HANSZ">
+<meta name="theme-color" content="#0b0b0b">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="HANSZ — Software Engineer">
+<meta property="og:description" content="HANSZ — Software Engineer.">
+<meta property="og:image" content="assets/hansz.jpeg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+
+<canvas class="rain" id="rain" aria-hidden="true"></canvas>
+
+<a class="skip" href="#links">Langsung ke daftar link</a>
+
+<!-- ══════════════ HEADER STRIP ══════════════ -->
+<div class="ticker">
+  <div class="ticker__track">
+    <span class="ticker__brand">HANSZ-DEV</span>
+    <span>Web Developer</span>
+  </div>
+</div>
+
+<main class="lt">
+
+  <!-- ══════════════ ./profile.sh ══════════════ -->
+  <header class="term">
+    <div class="term__bar">
+      <span class="dots" aria-hidden="true"><i class="d d--r"></i><i class="d d--y"></i><i class="d d--g"></i></span>
+    </div>
+
+    <div class="term__body">
+      <p class="pr"><span class="pr__p">hanz@dev</span><span class="pr__c">:~$</span> <span class="pr__cmd">whoami</span><span class="caret" aria-hidden="true"></span></p>
+
+      <div class="id">
+        <span class="ava">
+          <img src="assets/hansz.jpeg" alt="HANSZ — Software Engineer" width="736" height="736" fetchpriority="high">
+          <i class="ava__badge fa-solid fa-check" aria-hidden="true"></i>
+        </span>
+
+        <div class="id__txt">
+          <h1 class="id__name"><span class="grad">HAN</span><mark>SZ</mark></h1>
+          <p class="id__handle">@hanzdev</p>
+          <p class="id__bio">Software Engineer<span class="caret caret--inline" aria-hidden="true"></span></p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ══════════════ ./links.sh ══════════════ -->
+  <p class="pr pr--head" aria-hidden="true">$ ./links.sh --open <span class="caret"></span></p>
+
+  <nav class="lt__links" id="links" aria-label="Semua link">
+
+    <a class="lk" style="--c:var(--green)" data-key="1" data-confirm data-cmd="chat" data-target="./whatsapp"
+       data-avatar="assets/hansz.jpeg"
+       href="https://wa.me/6285882482969" target="_blank" rel="noopener noreferrer">
+      <span class="lk__key" aria-hidden="true">1</span>
+      <span class="lk__ico"><i class="fa-brands fa-whatsapp" data-icon aria-hidden="true"></i></span>
+      <span class="lk__txt">
+        <b data-title>joki-web-apps()</b>
+        <small data-desc>// web · android · ios · respon cepet</small>
+      </span>
+      <span class="lk__end">
+        <span class="lk__tag">WA</span>
+        <i class="lk__go fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+      </span>
+    </a>
+
+    <a class="lk" style="--c:var(--yellow)" data-key="2" data-confirm data-cmd="open" data-target="portfolio.js"
+       href="https://portfolio-mfarhanmuizaddin.vercel.app/" target="_blank" rel="noopener noreferrer">
+      <span class="lk__key" aria-hidden="true">2</span>
+      <span class="lk__ico"><i class="fa-solid fa-globe" data-icon aria-hidden="true"></i></span>
+      <span class="lk__txt">
+        <b data-title>portfolio()</b>
+        <small data-desc>Portfolio Saya</small>
+      </span>
+      <span class="lk__end">
+        <span class="lk__tag">live</span>
+        <i class="lk__go fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+      </span>
+    </a>
+
+    <a class="lk" style="--c:var(--blue)" data-key="3" data-confirm data-cmd="build" data-target="sourcecode-apk.sh"
+       data-warn="Lagi diperbaiki — websitenya belum jadi. Cek lagi nanti ya."
+       href="#" data-placeholder>
+      <span class="lk__key" aria-hidden="true">3</span>
+      <span class="lk__ico"><i class="fa-solid fa-box-archive" data-icon aria-hidden="true"></i></span>
+      <span class="lk__txt">
+        <b data-title>sourcecode-apk()</b>
+        <small data-desc>// lagi dikerjakan · cek lagi nanti</small>
+      </span>
+      <span class="lk__end">
+        <span class="lk__tag">coming soon</span>
+        <i class="lk__go fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+      </span>
+    </a>
+
+    <a class="lk" style="--c:var(--purple)" data-key="4" data-confirm data-cmd="mail" data-target="./email" data-cta="buka email"
+       href="mailto:mfarhanmuizaddin@gmail.com?subject=Project%20Request">
+      <span class="lk__key" aria-hidden="true">4</span>
+      <span class="lk__ico"><i class="fa-solid fa-envelope" data-icon aria-hidden="true"></i></span>
+      <span class="lk__txt">
+        <b data-title>gmail()</b>
+        <small data-desc>// kirim brief project ke email</small>
+      </span>
+      <span class="lk__end">
+        <span class="lk__tag">mail</span>
+        <i class="lk__go fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+      </span>
+    </a>
+  </nav>
+
+  <!-- ══════════════ ./socials.sh ══════════════ -->
+  <div class="soc">
+    <a class="soc__btn" data-confirm data-cmd="open" data-target="./github" data-cta="buka github"
+       href="https://github.com/muizfrhan" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+      <i class="fa-brands fa-github" data-icon aria-hidden="true"></i>
+      <span hidden data-title>github()</span>
+      <span hidden data-desc>// repo &amp; snippet saya</span>
+    </a>
+    <a class="soc__btn" data-confirm data-cmd="open" data-target="./linkedin" data-cta="buka linkedin"
+       href="https://www.linkedin.com/in/mfarhan-703753268/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+      <i class="fa-brands fa-linkedin" data-icon aria-hidden="true"></i>
+      <span hidden data-title>linkedin()</span>
+      <span hidden data-desc>// profil &amp; kontak kerja</span>
+    </a>
+    <a class="soc__btn" data-confirm data-cmd="open" data-target="./instagram" data-cta="buka instagram"
+       href="https://www.instagram.com/hanscult404" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+      <i class="fa-brands fa-instagram" data-icon aria-hidden="true"></i>
+      <span hidden data-title>instagram()</span>
+      <span hidden data-desc>// update harian &amp; protoan project</span>
+    </a>
+  </div>
+
+  <!-- ══════════════ ./status.sh ══════════════ -->
+  <div class="term term--status">
+    <div class="term__bar">
+      <span class="dots" aria-hidden="true"><i class="d d--r"></i><i class="d d--y"></i><i class="d d--g"></i></span>
+      <span class="term__file">~/hanz/status</span>
+    </div>
+    <div class="term__body">
+      <p class="pr"><span class="pr__p">hanz@dev</span><span class="pr__c">:~$</span> <span class="pr__cmd">echo</span> <span class="c-str">"© <span id="year">2026</span> HANSZ"</span> <span class="caret" aria-hidden="true"></span></p>
+      <p class="pr"><span class="pr__p">hanz@dev</span><span class="pr__c">:~$</span> <span class="pr__cmd">date</span> <span class="c-str">"<span id="date">—</span>"</span> <span class="caret" aria-hidden="true"></span></p>
+    </div>
+  </div>
+
+</main>
+
+<!-- ══════════════ ./confirm.sh ══════════════ -->
+<div class="mdl" id="mdl" hidden>
+  <div class="mdl__box" role="alertdialog" aria-modal="true" aria-labelledby="mdlTitle" aria-describedby="mdlDesc">
+
+    <div class="mdl__bar">
+      <span class="dots" aria-hidden="true"><i class="d d--r"></i><i class="d d--y"></i><i class="d d--g"></i></span>
+      <span class="term__file" id="mdlFile">~/hanz/confirm</span>
+    </div>
+
+    <div class="mdl__body">
+      <p class="pr mdl__cmd"><span class="pr__p">hanz@dev</span><span class="pr__c">:~$</span> <span class="pr__cmd" id="mdlCmd">run</span> <span id="mdlTarget">./link</span></p>
+
+      <span class="mdl__ico" id="mdlIco" aria-hidden="true"><i class="fa-solid fa-link"></i></span>
+
+      <h2 class="mdl__title" id="mdlTitle">Buka link</h2>
+      <p class="mdl__desc" id="mdlDesc">Klik tombol di bawah untuk lanjut.</p>
+
+      <p class="mdl__url" id="mdlUrl" hidden></p>
+
+      <p class="mdl__warn" id="mdlWarn" role="status" hidden>
+        <i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i>
+        <span id="mdlWarnTxt"></span>
+      </p>
+
+      <div class="mdl__act">
+        <button class="btn btn--ghost" id="mdlNo" type="button"><span id="mdlNoTxt">batal</span></button>
+        <button class="btn btn--go" id="mdlYes" type="button"><span id="mdlYesTxt">buka link</span><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button class="totop" id="toTop" type="button" aria-label="Kembali ke atas"><i class="fa-solid fa-chevron-up" aria-hidden="true"></i></button>
+
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <span class="toast__p">$</span><span id="toastMsg">catatan</span>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
